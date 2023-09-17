@@ -12,23 +12,23 @@
     
 </head>
 
-<body>
+<body onload="getTyped();">
 
     <!-- Customise header -->
     <header class="header">
         <a href="#" class="logo">Shoaib.io</a>
 
         <nav class="navbar">
-            <a href="#home" style="--i:1" class="active">Home</a>
-            <a href="#about" style="--i:2">About</a>
-            <a href="#services" style="--i:3">Services</a>
-            <a href="#portfolio" style="--i:4">Portfolio</a>
-            <a href="#contact" style="--i:5">Contact</a>
+            <a href="#home" style="--i:1" id='nav-Home' class="active" onclick="changeActive('Home');">Home</a>
+            <a href="#about" style="--i:2" id='nav-About' onclick="changeActive('About');">About</a>
+            <a href="#services" style="--i:3" id='nav-Services' onclick="changeActive('Services');">Services</a>
+            <a href="#portfolio" style="--i:4" id='nav-Portfolio' onclick="changeActive('Portfolio');">Portfolio</a>
+            <a href="#contact" style="--i:5" id='nav-Contact' onclick="changeActive('Contact');">Contact</a>
         </nav>
     </header>
 
     <!-- Content-->
-    <section class="home">
+    <section class="home" id="home">
         <div class="home-content">
             <h3>Hello, It's Me</h3>
             <h1>Shoaib Rehman</h1>
@@ -57,7 +57,7 @@
     </section>
 
     <!-- About -->
-    <section class="about">
+    <section class="about" id="about">
         <div class="skill-header">
             <h1>Technical Skills</h1>
         </div>
